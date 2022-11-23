@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  button Sort
+  h1 Db details
+  table(style='width:20%', border='1')
+    tr 
+      th Name
+      th Email 
+      th Experience 
+    tbody
+      each employee in details
+        tr
+           td #{employee.name}
+           td #{employee.email}
+           td(id = 'id01') #{employee.experience}
+
+  
